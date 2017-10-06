@@ -18,16 +18,16 @@ export default class Pawn extends Piece {
 
 
         if (isWhite){
-            if(this.isUnoccupied(board, myRow + 1, myColumn)){
+            if(board.isUnoccupied(new Square(myRow +1, myColumn))){
                 possibleMoves.push(new Square(myRow + 1, myColumn));
-                if(this.isYetToMove(isWhite, myRow) && (this.isUnoccupied(board, myRow + 2, myColumn))){
+                if(board.isUnoccupied(new Square(myRow +2, myColumn)) && this.isYetToMove(isWhite, myRow)){
                     possibleMoves.push(new Square(myRow + 2, myColumn));
                 }
             }
         } else {
-            if(this.isUnoccupied(board, myRow - 1, myColumn)){
+            if(board.isUnoccupied(new Square(myRow -1, myColumn))){
                 possibleMoves.push(new Square(myRow - 1, myColumn));
-                if(this.isYetToMove(isWhite, myRow) && (this.isUnoccupied(board, myRow - 2, myColumn))){
+                if(board.isUnoccupied(new Square(myRow -2 , myColumn)) && this.isYetToMove(isWhite, myRow)){
                     possibleMoves.push(new Square(myRow - 2, myColumn));
                 }
             }
@@ -36,16 +36,13 @@ export default class Pawn extends Piece {
         return possibleMoves
     }
 
-    isYetToMove(isWhite, myRow){
+    isYetToMove(isWhite, myRow) {
         return isWhite
             ? myRow === 1
             : myRow === 6;
     }
-
-    isUnoccupied(board, row, column){
-        return (board.getPiece(new Square(row, column)) === undefined);
-    }
 }
+
 
 
 

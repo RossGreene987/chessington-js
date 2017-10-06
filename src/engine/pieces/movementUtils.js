@@ -9,6 +9,7 @@ export class MovementUtils {
             }
         }
         return colMoves
+        
     }
 
     static getRowMoves(row, column){
@@ -30,6 +31,17 @@ export class MovementUtils {
         for(let i = -7; i<=7; i++){
             if (!(i===0)){moves.push(new Square(row + i, column - i))}
         }
+        return moves
+    }
+
+    static movesInDirection(board, row, column, upDirection, rightDirection){
+        let moves = [];
+        let nextSquare = new Square ( row + upDirection, column + rightDirection);
+        while(board.isUnoccupied(nextSquare) && board.isOnBoard(nextSquare)){
+            moves.push(nextSquare);
+            nextSquare = new Square ( nextSquare.row + upDirection, nextSquare.col + rightDirection);
+        }
+
         return moves
     }
 }
