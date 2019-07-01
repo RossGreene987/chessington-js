@@ -12,5 +12,4 @@ export default class Piece {
         board.movePiece(currentSquare, newSquare);
     }
 
-
 }
