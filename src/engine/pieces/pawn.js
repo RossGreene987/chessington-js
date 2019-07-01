@@ -16,38 +16,20 @@ export default class Pawn extends Piece {
         let myColumn = mySquare.col;
         let isWhite = (this.player === Player.WHITE);
 
+        let advanceDirection = isWhite ? 1 : -1;
 
-
-        if (isWhite){
-            if(board.isUnoccupied(new Square(myRow +1, myColumn))){
-                possibleMoves.push(new Square(myRow + 1, myColumn));
-                if(board.isUnoccupied(new Square(myRow +2, myColumn)) && this.isYetToMove(isWhite, myRow)){
-                    possibleMoves.push(new Square(myRow + 2, myColumn));
-                }
+        if(board.isUnoccupied(new Square(myRow + advanceDirection, myColumn))){
+            possibleMoves.push(new Square(myRow + advanceDirection, myColumn));
+            if(board.isUnoccupied(new Square(myRow + 2 *advanceDirection, myColumn)) && this.isYetToMove(isWhite, myRow)){
+                possibleMoves.push(new Square(myRow + 2 *advanceDirection, myColumn));
             }
-
-            let attackMoves = [new Square(myRow + 1, myColumn - 1), new Square(myRow + 1, myColumn + 1)]
-            attackMoves = attackMoves.filter(square => {
-                return (board.isOnBoard(square) && !board.isUnoccupied(square) && !(this.player === board.getPiece(square).player))
-            });
-            possibleMoves = possibleMoves.concat(attackMoves)
-
-        } else {
-            if(board.isUnoccupied(new Square(myRow -1, myColumn))){
-                possibleMoves.push(new Square(myRow - 1, myColumn));
-                if(board.isUnoccupied(new Square(myRow -2 , myColumn)) && this.isYetToMove(isWhite, myRow)){
-                    possibleMoves.push(new Square(myRow - 2, myColumn));
-                }
-            }
-
-            let attackMoves = [new Square(myRow - 1, myColumn - 1), new Square(myRow - 1, myColumn + 1)]
-            attackMoves = attackMoves.filter(square => {
-                return (board.isOnBoard(square) && !board.isUnoccupied(square)
-                    && !(this.player === board.getPiece(square).player));
-            });
-            possibleMoves = possibleMoves.concat(attackMoves)
         }
 
+        let attackMoves = [new Square(myRow + advanceDirection, myColumn - 1), new Square(myRow + advanceDirection, myColumn + 1)]
+        attackMoves = attackMoves.filter(square => {
+            return (board.isOnBoard(square) && !board.isUnoccupied(square) && !(this.player === board.getPiece(square).player))
+        });
+        possibleMoves = possibleMoves.concat(attackMoves);
         return this.removeIllegalMoves(possibleMoves)
     }
 

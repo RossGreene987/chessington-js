@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63056264-6fb8-492e-a13c-fdb0c76c2c5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/board.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/board.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/pieces/bishop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/pieces/bishop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/pieces/king.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/pieces/king.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/pieces/knight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/pieces/knight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/pieces/movementUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/pieces/movementUtils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/pieces/pawn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/pieces/pawn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/pieces/piece.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/pieces/piece.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/pieces/queen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/pieces/queen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/pieces/rook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/pieces/rook.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/engine/pieces/bishop.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/engine/pieces/bishop.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/engine/pieces/king.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/engine/pieces/king.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/engine/pieces/knight.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/engine/pieces/knight.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/engine/pieces/pawn.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/engine/pieces/pawn.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/engine/pieces/queen.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/engine/pieces/queen.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/engine/pieces/rook.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/engine/pieces/rook.spec.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="918">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -64,36 +50,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/engine/pieces/queen.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/engine/pieces/knight.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="662">
-              <caret line="69" column="7" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/engine/pieces/king.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="679">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/player.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -102,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engine/pieces/pawn.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+            <state relative-caret-position="492">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -115,22 +71,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/engine/pieces/pawn.spec.js">
+        <entry file="file://$PROJECT_DIR$/src/engine/pieces/movementUtils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="662">
-              <caret line="89" column="56" lean-forward="true" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
+            <state relative-caret-position="424">
+              <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engine/pieces/queen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
               <folding>
-                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/frontend/index.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engine/pieces/rook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,11 +114,8 @@
         <option value="$PROJECT_DIR$/tests/engine/board.spec.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/engine/pieces/movementUtils.js" />
-        <option value="$PROJECT_DIR$/src/engine/pieces/queen.js" />
         <option value="$PROJECT_DIR$/src/engine/pieces/knight.js" />
         <option value="$PROJECT_DIR$/src/engine/pieces/king.js" />
-        <option value="$PROJECT_DIR$/src/engine/pieces/rook.js" />
-        <option value="$PROJECT_DIR$/src/engine/board.js" />
         <option value="$PROJECT_DIR$/src/engine/pieces/bishop.js" />
         <option value="$PROJECT_DIR$/tests/engine/pieces/rook.spec.js" />
         <option value="$PROJECT_DIR$/tests/engine/pieces/bishop.spec.js" />
@@ -158,9 +123,12 @@
         <option value="$PROJECT_DIR$/tests/engine/pieces/knight.spec.js" />
         <option value="$PROJECT_DIR$/tests/engine/pieces/king.spec.js" />
         <option value="$PROJECT_DIR$/src/engine/pieces/piece.js" />
-        <option value="$PROJECT_DIR$/src/engine/pieces/pawn.js" />
         <option value="$PROJECT_DIR$/tests/engine/pieces/pawn.spec.js" />
         <option value="$PROJECT_DIR$/src/frontend/index.html" />
+        <option value="$PROJECT_DIR$/src/engine/pieces/rook.js" />
+        <option value="$PROJECT_DIR$/src/engine/pieces/queen.js" />
+        <option value="$PROJECT_DIR$/src/engine/pieces/pawn.js" />
+        <option value="$PROJECT_DIR$/src/engine/board.js" />
       </list>
     </option>
   </component>
@@ -207,6 +175,27 @@
               <item name="chessington-js" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chessington-js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chessington-js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chessington-js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chessington-js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chessington-js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chessington-js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chessington-js" type="b2602c69:ProjectViewProjectNode" />
@@ -299,7 +288,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561968872925</updated>
-      <workItem from="1561968874504" duration="20974000" />
+      <workItem from="1561968874504" duration="23232000" />
     </task>
     <servers />
   </component>
@@ -312,7 +301,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20974000" />
+    <option name="totallyTimeSpent" value="23232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-649" y="-1200" width="1332" height="1166" extended-state="0" />
@@ -329,7 +318,7 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" weight="0.32913843" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5007862" side_tool="true" weight="0.32913843" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.5007862" side_tool="true" visible="true" weight="0.32913843" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49921384" weight="0.32913843" />
@@ -439,33 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/pieces/queen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/pieces/rook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/pieces/movementUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engine/square.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -538,28 +500,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/board.js">
+    <entry file="file://$PROJECT_DIR$/src/frontend/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="272">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/pieces/piece.js">
+    <entry file="file://$PROJECT_DIR$/src/frontend/js/chessboard-0.3.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="92" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/pieces/pawn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/engine/pieces/pawn.spec.js">
@@ -572,10 +522,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/index.html">
+    <entry file="file://$PROJECT_DIR$/src/engine/pieces/queen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="153">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/pieces/rook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/pieces/movementUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/pieces/piece.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="92" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/board.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/pieces/pawn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

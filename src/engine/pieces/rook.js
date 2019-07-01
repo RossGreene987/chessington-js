@@ -1,5 +1,4 @@
 import Piece from './piece';
-import Square from '../../../src/engine/square';
 import {MovementUtils} from "./movementUtils";
 
 export default class Rook extends Piece {

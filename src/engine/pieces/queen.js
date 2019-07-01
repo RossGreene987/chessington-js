@@ -1,5 +1,4 @@
 import Piece from './piece';
-import Square from "../square";
 import {MovementUtils} from "./movementUtils";
 
 export default class Queen extends Piece {
@@ -16,11 +15,8 @@ export default class Queen extends Piece {
         let rowMoves = MovementUtils.getRowMoves(board, myRow, myColumn);
         let diagMoves = MovementUtils.getDiagonalMoves(board, myRow, myColumn);
 
-        let allPossibleMoves = colMoves.concat(rowMoves.concat(diagMoves))
+        let allPossibleMoves = colMoves.concat(rowMoves.concat(diagMoves));
         return this.removeFriendlyFire(board, allPossibleMoves)
     }
-
-
-
 
 }
