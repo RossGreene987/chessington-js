@@ -17,6 +17,7 @@ export default class Pawn extends Piece {
         let isWhite = (this.player === Player.WHITE);
 
 
+
         if (isWhite){
             if(board.isUnoccupied(new Square(myRow +1, myColumn))){
                 possibleMoves.push(new Square(myRow + 1, myColumn));
@@ -24,6 +25,13 @@ export default class Pawn extends Piece {
                     possibleMoves.push(new Square(myRow + 2, myColumn));
                 }
             }
+
+            let attackMoves = [new Square(myRow + 1, myColumn - 1), new Square(myRow + 1, myColumn + 1)]
+            attackMoves = attackMoves.filter(square => {
+                return (board.isOnBoard(square) && !board.isUnoccupied(square) && !(this.player === board.getPiece(square).player))
+            });
+            possibleMoves = possibleMoves.concat(attackMoves)
+
         } else {
             if(board.isUnoccupied(new Square(myRow -1, myColumn))){
                 possibleMoves.push(new Square(myRow - 1, myColumn));
@@ -31,9 +39,16 @@ export default class Pawn extends Piece {
                     possibleMoves.push(new Square(myRow - 2, myColumn));
                 }
             }
+
+            let attackMoves = [new Square(myRow - 1, myColumn - 1), new Square(myRow - 1, myColumn + 1)]
+            attackMoves = attackMoves.filter(square => {
+                return (board.isOnBoard(square) && !board.isUnoccupied(square)
+                    && !(this.player === board.getPiece(square).player));
+            });
+            possibleMoves = possibleMoves.concat(attackMoves)
         }
 
-        return possibleMoves
+        return this.removeIllegalMoves(possibleMoves)
     }
 
     isYetToMove(isWhite, myRow) {

@@ -10,7 +10,9 @@ export default class Bishop extends Piece {
         let mySquare = board.findPiece(this);
         let myRow = mySquare.row;
         let myColumn = mySquare.col;
-        return this.removeIllegalMoves(MovementUtils.getTooManyDiagonalMoves(myRow,myColumn, board))
+        console.log("bishop player:" + this.player.toString());
+        let allPossibleMoves = MovementUtils.getDiagonalMoves(board, myRow,myColumn, board);
+        return this.removeFriendlyFire(board, allPossibleMoves);
     }
 
 

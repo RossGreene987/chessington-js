@@ -74,16 +74,6 @@ describe('Pawn', () => {
             moves.should.not.deep.include(Square.at(5, 3));
         });
 
-        it('cannot take the opposing king', () => {
-            const pawn = new Pawn(Player.WHITE);
-            const opposingKing = new King(Player.BLACK);
-            board.setPiece(Square.at(4, 4), pawn);
-            board.setPiece(Square.at(5, 3), opposingKing);
-
-            const moves = pawn.getAvailableMoves(board);
-
-            moves.should.not.deep.include(Square.at(5, 3));
-        });
 
     });
 
@@ -153,16 +143,6 @@ describe('Pawn', () => {
             moves.should.not.deep.include(Square.at(3, 3));
         });
 
-        it('cannot take the opposing king', () => {
-            const pawn = new Pawn(Player.BLACK);
-            const opposingKing = new King(Player.WHITE);
-            board.setPiece(Square.at(4, 4), pawn);
-            board.setPiece(Square.at(3, 3), opposingKing);
-
-            const moves = pawn.getAvailableMoves(board);
-
-            moves.should.not.deep.include(Square.at(3, 3));
-        });
     });
 
     it('cannot move if there is a piece in front', () => {

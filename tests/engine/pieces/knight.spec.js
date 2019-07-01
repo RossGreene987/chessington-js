@@ -69,17 +69,6 @@ describe('Knight', () => {
         moves.should.deep.include(Square.at(3, 6));
     });
 
-    it('cannot take the opposing king', () => {
-        const knight = new Knight(Player.WHITE);
-        const opposingKing = new King(Player.BLACK);
-        board.setPiece(Square.at(4, 4), knight);
-        board.setPiece(Square.at(3, 6), opposingKing);
-
-        const moves = knight.getAvailableMoves(board);
-
-        moves.should.not.deep.include(Square.at(3, 6));
-    });
-
     it('cannot take friendly pieces', () => {
         const knight = new Knight(Player.WHITE);
         const friendlyPiece = new Pawn(Player.WHITE);

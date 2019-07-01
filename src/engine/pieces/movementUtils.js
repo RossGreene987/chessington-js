@@ -1,37 +1,27 @@
 import Square from "../square";
 
+
 export class MovementUtils {
-    static getColumnMoves(row, column){
-        let colMoves = new Array(0);
-        for(let i=0; i<8; i++){
-            if (!(i===column)){
-                colMoves.push(new Square(row, i))
-            }
-        }
-        return colMoves
-        
+    static getColumnMoves(board, row, column){
+        let upMoves = this.movesInDirection(board, row, column, 1, 0);
+        let downMoves = this.movesInDirection(board, row, column, -1, 0);
+        return upMoves.concat(downMoves)
     }
 
-    static getRowMoves(row, column){
-        let rowMoves = new Array(0);
-        for(let i=0; i<8; i++){
-            if (!(i===row)){
-                rowMoves.push(new Square(i, column))
-            }
-        }
-        return rowMoves
+    static getRowMoves(board, row, column){
+        let rightMoves = this.movesInDirection(board, row, column, 0, 1);
+        let leftMoves = this.movesInDirection(board, row, column, 0, -1);
+
+        return rightMoves.concat(leftMoves)
     }
 
-    static getTooManyDiagonalMoves(row, column){
-        let moves = new Array(0);
-        for(let i=-7; i<=7; i++){
-            if (!(i===0)){moves.push(new Square(row + i, column + i))}
+    static getDiagonalMoves(board, row, column){
+        let upRightMoves = this.movesInDirection(board, row, column, 1, 1);
+        let upLeftMoves = this.movesInDirection(board, row, column, 1, -1);
+        let downRightMoves = this.movesInDirection(board, row, column, -1, 1);
+        let downLeftMoves = this.movesInDirection(board, row, column, -1, -1);
 
-        }
-        for(let i = -7; i<=7; i++){
-            if (!(i===0)){moves.push(new Square(row + i, column - i))}
-        }
-        return moves
+        return upRightMoves.concat(upLeftMoves.concat(downRightMoves.concat(downLeftMoves)))
     }
 
     static movesInDirection(board, row, column, upDirection, rightDirection){
@@ -41,7 +31,11 @@ export class MovementUtils {
             moves.push(nextSquare);
             nextSquare = new Square ( nextSquare.row + upDirection, nextSquare.col + rightDirection);
         }
+        if (board.isOnBoard(nextSquare)){
+            moves.push(nextSquare)
+        }
 
         return moves
     }
+
 }

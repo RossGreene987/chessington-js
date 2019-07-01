@@ -12,9 +12,9 @@ export default class Rook extends Piece {
         let myRow = mySquare.row;
         let myColumn = mySquare.col;
 
-        let colMoves = MovementUtils.getColumnMoves(myRow, myColumn);
-        let rowMoves = MovementUtils.getRowMoves(myRow, myColumn);
-        return rowMoves.concat(colMoves)
+        let colMoves = MovementUtils.getColumnMoves(board, myRow, myColumn);
+        let rowMoves = MovementUtils.getRowMoves(board, myRow, myColumn);
+        let allPossibleMoves = rowMoves.concat(colMoves);
+        return this.removeFriendlyFire(board, allPossibleMoves);
     }
-
 }

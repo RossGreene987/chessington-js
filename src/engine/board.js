@@ -45,7 +45,9 @@ export default class Board {
     }
 
     isUnoccupied(square){
-        return (this.getPiece(square) === undefined);
+        if (this.isOnBoard(square)){
+            return (this.getPiece(square) === undefined);
+        }
     }
 
     isOnBoard(square){

@@ -12,11 +12,12 @@ export default class Queen extends Piece {
         let myRow = mySquare.row;
         let myColumn = mySquare.col;
 
-        let colMoves = MovementUtils.getColumnMoves(myRow, myColumn);
-        let rowMoves = MovementUtils.getRowMoves(myRow, myColumn);
-        let diagMoves = this.removeIllegalMoves(MovementUtils.getTooManyDiagonalMoves(myRow, myColumn));
+        let colMoves = MovementUtils.getColumnMoves(board, myRow, myColumn);
+        let rowMoves = MovementUtils.getRowMoves(board, myRow, myColumn);
+        let diagMoves = MovementUtils.getDiagonalMoves(board, myRow, myColumn);
 
-        return colMoves.concat(rowMoves.concat(diagMoves))
+        let allPossibleMoves = colMoves.concat(rowMoves.concat(diagMoves))
+        return this.removeFriendlyFire(board, allPossibleMoves)
     }
 
 
