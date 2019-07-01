@@ -1,4 +1,5 @@
 import Piece from './piece';
+import Square from '../../../src/engine/square';
 
 export default class Knight extends Piece {
     constructor(player) {
@@ -6,6 +7,11 @@ export default class Knight extends Piece {
     }
 
     getAvailableMoves(board) {
-        return new Array(0);
+        let mySquare = board.findPiece(this);
+        let myRow = mySquare.row;
+        let myColumn = mySquare.col;
+        let allJumps = [[2,1],[2,-1],[-2,1],[-2,-1],[1,2],[1,-2],[-1,2],[-1,-2]];
+        let possibleMoves = allJumps.map(jump => new Square(jump[0] + myRow, jump[1] + myColumn));
+        return this.removeIllegalMoves(possibleMoves);
     }
 }

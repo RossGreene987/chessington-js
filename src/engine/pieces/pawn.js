@@ -9,7 +9,7 @@ export default class Pawn extends Piece {
     }
 
     getAvailableMoves(board) {
-        let possibleMoves = new Array(0);
+        let possibleMoves = [];
         let mySquare = board.findPiece(this);
         let myRow = mySquare.row;
         let myColumn = mySquare.col;
@@ -22,16 +22,20 @@ export default class Pawn extends Piece {
         }
 
         if(this.isYetToMove(isWhite, myRow)){
-            if (isWhite){possibleMoves.push(new Square(myRow + 2, myColumn))}
-            else {possibleMoves.push(new Square(myRow - 2, myColumn))}
+            if (isWhite){
+                possibleMoves.push(new Square(myRow + 2, myColumn));
+            } else {
+                possibleMoves.push(new Square(myRow - 2, myColumn));
+            }
         }
         return possibleMoves
     }
 
     isYetToMove(isWhite, myRow){
-        if (isWhite){ return (myRow === 1)}
-        else {return (myRow === 6)}
-}
+        return isWhite
+            ? myRow === 1
+            : myRow === 6;
+    }
 }
 
 

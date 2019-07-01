@@ -19,5 +19,4 @@ export default class Piece {
             return(row <=7 && row >= 0 && column <= 7 && column >= 0)
         });
     }
-
 }
