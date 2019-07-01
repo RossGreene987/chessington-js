@@ -13,7 +13,7 @@ export default class Pawn extends Piece {
         let mySquare = board.findPiece(this);
         let myRow = mySquare.row;
         let myColumn = mySquare.col;
-        let isWhite = (this.player === Player.WHITE)
+        let isWhite = (this.player === Player.WHITE);
 
         if (isWhite){
             possibleMoves.push(new Square(myRow + 1, myColumn));

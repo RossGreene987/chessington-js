@@ -12,4 +12,12 @@ export default class Piece {
         board.movePiece(currentSquare, newSquare);
     }
 
+    removeIllegalMoves(possibleMoves){
+        return possibleMoves.filter(function(square) {
+            let row = square.row;
+            let column = square.col;
+            return(row <=7 && row >= 0 && column <= 7 && column >= 0)
+        });
+    }
+
 }
